@@ -34,8 +34,8 @@ Welcome to Day 1 of my C++ and Data Structures & Algorithms (DSA) journey! Today
 Starting with the basics is essential for building a strong foundation. Understanding how to set up a C++ program and manage input/output operations is crucial for more complex programming tasks.
 
 ## 🔗 Connect with Me
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/thesanthoshvs/)
-- **GitHub:** [Your GitHub Profile](https://github.com/Itssanthoshhere)
+- **LinkedIn:** [Santhosh VS](https://www.linkedin.com/in/thesanthoshvs/)
+- **GitHub:** [Itssanthoshhere](https://github.com/Itssanthoshhere)
 
 Stay tuned for more updates as I progress through this journey of mastering C++ and DSA!
 
