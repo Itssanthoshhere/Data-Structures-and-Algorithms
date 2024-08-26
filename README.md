@@ -21,7 +21,7 @@ This repository is designed to provide a structured approach to learning C++ and
 
 ### Day 1: Introduction to C++
 - **Topics Covered:** Basic structure of a C++ program, input/output operations.
-- **Code Example:** [Code](#https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%201%20-%20Diving%20into%20C%2B%2B%20Basics!)
+- [Code](#https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%201%20-%20Diving%20into%20C%2B%2B%20Basics!)
 - **Key Learnings:** Understanding the basic syntax and structure of a C++ program.
 
 ### Day 2: Datatypes and String Manipulation
