@@ -13,6 +13,50 @@ Welcome to Day 2 of my C++ and Data Structures & Algorithms (DSA) journey! Today
 - **Data Types:** `int`, `float`, `long`, `boolean`, `char`, `string`.
 - **Input Methods:** Using `cin` for simple inputs and `getline()` for reading full strings.
 
+## 📂 Code Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    /*
+    Data types in C++:
+    - int: Integer type
+    - float: Floating-point type
+    - long: Extended size integer type
+    - boolean: Boolean type (true/false)
+    - char: Character type
+    - string: String type
+    */
+
+    cout << "\n";
+    cout << "Data Types: " << endl;
+    
+    // Demonstrating string input and output
+    cout << "1. String: " << endl;
+    string s1, s2;
+    cin >> s1 >> s2; // Reads strings until the first space
+    cout << s1 << " " << s2 << endl;
+
+    cout << "\n";
+
+    // Demonstrating character input and output
+    cout << "2. Char: " << endl;
+    char ch;
+    cin >> ch;
+    cout << ch << endl;
+
+    cout << "\n";
+    
+    // Direct assignment of a character
+    char c = 'g';
+    cout << c << endl;
+
+    return 0;
+}
+```
+
 ## 📘 Explanation
 
 - **Data Types:**
