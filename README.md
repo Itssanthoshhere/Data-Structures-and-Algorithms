@@ -1,3 +1,7 @@
+Here's a comprehensive README template for your C++ with Data Structures & Algorithms (DSA) GitHub repository:
+
+---
+
 # C++ with Data Structures & Algorithms (DSA) 📚
 
 Welcome to my repository dedicated to learning and mastering C++ and Data Structures & Algorithms (DSA)! This repository documents my daily progress and includes code examples, explanations, and insights gained throughout my journey.
@@ -8,7 +12,7 @@ This repository is designed to provide a structured approach to learning C++ and
 
 ## 📅 Table of Contents
 
-- [Day 1: Introduction to C++](#Day-1-Diving-into-C++-Basics!)
+- [Day 1: Introduction to C++](#day-1-introduction-to-c++)
 - [Day 2: Datatypes and String Manipulation](#day-2-datatypes-and-string-manipulation)
 - [Day 3: Conditional Statements](#day-3-conditional-statements)
 - [Day 4: Switch Case Statements](#day-4-switch-case-statements)
@@ -22,7 +26,7 @@ This repository is designed to provide a structured approach to learning C++ and
 
 ### Day 1: Introduction to C++
 - **Topics Covered:** Basic structure of a C++ program, input/output operations.
-- **Code Example:** [Link to Day 1 Code](#)
+- **Code Example:** [Link to Day 1 Code](#[C++ DSA-learning-journey/Day 1 - Diving into C++ Basics!](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%201%20-%20Diving%20into%20C%2B%2B%20Basics!))
 - **Key Learnings:** Understanding the basic syntax and structure of a C++ program.
 
 ### Day 2: Datatypes and String Manipulation
