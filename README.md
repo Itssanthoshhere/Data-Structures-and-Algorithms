@@ -15,7 +15,7 @@ This repository is designed to provide a structured approach to learning C++ and
 - [Day 5: Arrays and Strings](#day-5-arrays-and-strings)
 - [Day 6: Loops](#day-6-loops)
 - [Day 7: While and Do-While Loops](#day-7-while-and-do-while-loops)
-- [Connect with Me](#Connect-with-Me)
+- [Connect with Me](#connect-with-me)
 
 
 ## 📄 Daily Progress
