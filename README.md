@@ -26,7 +26,7 @@ This repository is designed to provide a structured approach to learning C++ and
 
 ### Day 2: Datatypes and String Manipulation
 - **Topics Covered:** Different data types, string input and output.
-- **Code Example:** [Link to Day 2 Code](#https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%202%20-%20Exploring%20Data%20Types%20in%20C%2B%2B!)
+- **Code Example:** [Code](#https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%202%20-%20Exploring%20Data%20Types%20in%20C%2B%2B!)
 - **Key Learnings:** Handling various data types and string operations.
 
 ### Day 3: Conditional Statements
