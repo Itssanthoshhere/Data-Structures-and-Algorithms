@@ -37,8 +37,7 @@ Welcome to Day 2 of my C++ and Data Structures & Algorithms (DSA) journey! Today
 Understanding the various data types and how to manipulate them is critical for developing efficient and effective C++ programs. Today’s exercises highlighted the importance of knowing when to use different input methods based on the context of the data.
 
 ## 🔗 Connect with Me
-- **LinkedIn:** [Your LinkedIn Profile](#)
-- **Twitter:** [Your Twitter Handle](#)
-- **GitHub:** [Your GitHub Profile](#)
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/thesanthoshvs/)
+- **GitHub:** [Your GitHub Profile]([#](https://github.com/Itssanthoshhere))
 
 Stay tuned for more updates as I continue to explore the depths of C++ and DSA!
