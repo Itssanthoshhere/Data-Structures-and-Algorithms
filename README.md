@@ -8,7 +8,7 @@ This repository is designed to provide a structured approach to learning C++ and
 
 ## 📅 Table of Contents
 
-- [Day 1: Introduction to C++](#C++ DSA-learning-journey/Day 1 - Diving into C++ Basics!)
+- [Day 1: Introduction to C++](#Day-1-Diving-into-C++-Basics!)
 - [Day 2: Datatypes and String Manipulation](#day-2-datatypes-and-string-manipulation)
 - [Day 3: Conditional Statements](#day-3-conditional-statements)
 - [Day 4: Switch Case Statements](#day-4-switch-case-statements)
