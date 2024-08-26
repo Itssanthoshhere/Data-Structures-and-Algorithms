@@ -1,4 +1,4 @@
-## Day 1: Introduction to C++ 🚀
+# Day 1: Introduction to C++ 🚀
 
 Welcome to Day 1 of my C++ and Data Structures & Algorithms (DSA) journey! Today, I focused on setting up the general skeleton for a basic C++ program and explored fundamental input/output operations.
 
@@ -13,6 +13,30 @@ Welcome to Day 1 of my C++ and Data Structures & Algorithms (DSA) journey! Today
 - `#include <iostream>`: Essential for input/output stream handling.
 - `int main()`: The entry point of any C++ program.
 - `cout` and `cin`: Basic output and input in C++.
+
+## 📂 Code Example
+
+```cpp
+#include <bits/stdc++.h> // Used to import all libraries
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Output a message to the console
+    cout << "Sandy!" << "\n"; // or use endl for a newline
+
+    // Taking input from the user
+    cout << "Input/Output: " << endl;
+    int x, y;
+    cin >> x >> y;
+    
+    // Displaying the input values
+    cout << "Value of x: " << x << endl;
+    cout << "Value of x: " << x << " and y: " << y;
+    
+    return 0;
+}
+```
 
 ## 📘 Explanation
 
@@ -38,5 +62,3 @@ Starting with the basics is essential for building a strong foundation. Understa
 - **GitHub:** [Itssanthoshhere](https://github.com/Itssanthoshhere)
 
 Stay tuned for more updates as I progress through this journey of mastering C++ and DSA!
-
----
