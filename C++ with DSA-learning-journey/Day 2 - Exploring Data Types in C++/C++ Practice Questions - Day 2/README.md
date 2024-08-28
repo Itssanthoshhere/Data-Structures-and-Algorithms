@@ -63,7 +63,7 @@ public:
 
 ### 🔗 GitHub Repository
 
-You can find the complete code for today's problem [here](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%202%20-%20Exploring%20Data%20Types%20in%20C%2B%2B/C%2B%2B%20Practice%20Questions%20-%20Day%202). 
+You can find the complete code for today's problem [here](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%202%20-%20Exploring%20Data%20Types%20in%20C%2B%2B). 
 
 ## 🔗 Connect with Me
 - **LinkedIn:** [Santhosh VS](https://www.linkedin.com/in/thesanthoshvs/)
