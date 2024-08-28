@@ -21,37 +21,37 @@ This repository is designed to provide a structured approach to learning C++ and
 
 ### Day 1: Introduction to C++
 - **Topics Covered:** Basic structure of a C++ program, input/output operations.
-- **Code Example:** [Link to Day 1 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%201%20-%20Diving%20into%20C%2B%2B%20Basics!)
+- **Code Example:** [Link to Day 1 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%201%20-%20Diving%20into%20C%2B%2B%20Basics)
 - **Key Learnings:** Understanding the basic syntax and structure of a C++ program.
 
 ### Day 2: Datatypes and String Manipulation
 - **Topics Covered:** Different data types, string input and output.
-- **Code Example:** [Link to Day 2 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%202%20-%20Exploring%20Data%20Types%20in%20C%2B%2B!)
+- **Code Example:** [Link to Day 2 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%202%20-%20Exploring%20Data%20Types%20in%20C%2B%2B)
 - **Key Learnings:** Handling various data types and string operations.
 
 ### Day 3: Conditional Statements
 - **Topics Covered:** `if`, `else`, and `else if` statements.
-- **Code Example:** [Link to Day 3 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%203%20-%20Mastering%20Conditional%20Statements%20in%20C%2B%2B!)
+- **Code Example:** [Link to Day 3 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%203%20-%20Mastering%20Conditional%20Statements%20in%20C%2B%2B)
 - **Key Learnings:** Implementing decision-making logic in C++.
 
 ### Day 4: Switch Case Statements
 - **Topics Covered:** `switch` case for multiple conditions.
-- **Code Example:** [Link to Day 4 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%204%20-%20Understanding%20the%20Switch%20Statement%20in%20C%2B%2B!)
+- **Code Example:** [Link to Day 4 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%204%20-%20Understanding%20the%20Switch%20Statement%20in%20C%2B%2B)
 - **Key Learnings:** Using `switch` cases to handle multiple potential values.
 
 ### Day 5: Arrays and Strings
 - **Topics Covered:** Single and 2D arrays, basic string operations.
-- **Code Example:** [Link to Day 5 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%205%20-%20Exploring%20Arrays%20and%20Strings%20in%20C%2B%2B!)
+- **Code Example:** [Link to Day 5 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%205%20-%20Exploring%20Arrays%20and%20Strings%20in%20C%2B%2B)
 - **Key Learnings:** Working with arrays and string manipulation.
 
 ### Day 6: Loops
 - **Topics Covered:** `for` loops, different iteration patterns.
-- **Code Example:** [Link to Day 6 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%206%20-%20Mastering%20Loops%20in%20C%2B%2B!)
+- **Code Example:** [Link to Day 6 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%206%20-%20Mastering%20Loops%20in%20C%2B%2B)
 - **Key Learnings:** Iterating over sequences with `for` loops.
 
 ### Day 7: While and Do-While Loops
 - **Topics Covered:** `while` and `do-while` loops.
-- **Code Example:** [Link to Day 7 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20DSA-learning-journey/Day%207%20-%20Exploring%20%60while%60%20and%20%60do-while%60%20Loops%20in%20C%2B%2B!)
+- **Code Example:** [Link to Day 7 Code](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%207%20-%20Exploring%20%60while%60%20and%20%60do-while%60%20Loops%20in%20C%2B%2B)
 - **Key Learnings:** Implementing loops that execute based on conditions.
 
 ## 🔗 Connect with Me
