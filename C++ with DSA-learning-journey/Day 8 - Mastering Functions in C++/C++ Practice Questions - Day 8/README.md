@@ -1,4 +1,4 @@
-# Day 8: Continuing the Learning Journey Pass by Reference and Value in C++
+# Day 8: Continuing the Learning Journey of Pass by Reference and Value in C++
 
 Welcome to Day 8 of my C++ and DSA learning journey! Today, I delved deeper into the concept of passing arguments to functions by reference and by value. This is a fundamental concept in C++ that plays a crucial role in how data is managed within a program.
 
