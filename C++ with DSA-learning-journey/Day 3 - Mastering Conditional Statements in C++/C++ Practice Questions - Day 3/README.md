@@ -1,4 +1,4 @@
-# Day 3: Continuing the Learning Journey
+# Day 3: Continuing the Learning Journey of Conditional Statements in C++
 
 ## 📚 Today's Practice Question
 
@@ -56,9 +56,21 @@ public:
 - Reinforced my understanding of conditional statements using `if-else`.
 - Practiced writing a simple function to compare two values and return a corresponding result.
 
-### 🔗 GitHub Repository
+## 🔗 Additional Resources
+- [GeeksforGeeks: if-else (Decision Making)](https://www.geeksforgeeks.org/problems/java-if-else-decision-making0924/0?category%255B%255D=Java&difficulty%255B%255D=-2&page=1&query=category%255B%255DJavadifficulty%255B%255D-2page1category%255B%255DJava)
+- [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
-You can find the complete code for today's problem [here](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%203%20-%20Mastering%20Conditional%20Statements%20in%20C%2B%2B). 
+## 🛠️ Check out the Code
+You can find the complete code for this day in my [GitHub repository](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%203%20-%20Mastering%20Conditional%20Statements%20in%20C%2B%2B).
+a
+---
+
+# My 100 Days of Code Challenge
+I’m documenting my journey through the Striver's A2Z DSA Course/Sheet, where I solve problems daily and solidify my understanding of C++ and Data Structures.
+
+Feel free to follow along and share your thoughts!
+
+---
 
 ## 🔗 Connect with Me
 - **LinkedIn:** [Santhosh VS](https://www.linkedin.com/in/thesanthoshvs/)
