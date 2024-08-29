@@ -62,7 +62,7 @@ public:
 
 ## 🛠️ Check out the Code
 You can find the complete code for this day in my [GitHub repository](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%203%20-%20Mastering%20Conditional%20Statements%20in%20C%2B%2B).
-a
+
 ---
 
 # My 100 Days of Code Challenge
