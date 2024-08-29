@@ -47,7 +47,7 @@ int main() {
 - **Pass by Reference:** Efficient for large data structures and necessary when you want to modify the original data.
 
 ## 🔗 Additional Resources
-- [GeeksforGeeks: Pass by Value vs. Pass by Reference](https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/)
+- [GeeksforGeeks: Pass by Value vs. Pass by Reference](https://www.geeksforgeeks.org/problems/pass-by-reference-and-value/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pass-by-reference-and-value)
 - [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
 ## 🛠️ Check out the Code
