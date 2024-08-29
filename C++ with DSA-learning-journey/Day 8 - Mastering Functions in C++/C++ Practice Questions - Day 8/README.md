@@ -56,7 +56,7 @@ You can find the complete code for this day in my [GitHub repository](https://gi
 ---
 
 # My 100 Days of Code Challenge
-I’m documenting my journey through the Striver's A2Z DSA Course, where I solve problems daily and solidify my understanding of C++ and Data Structures.
+I’m documenting my journey through the Striver's A2Z DSA Course/Sheet, where I solve problems daily and solidify my understanding of C++ and Data Structures.
 
 Feel free to follow along and share your thoughts!
 
