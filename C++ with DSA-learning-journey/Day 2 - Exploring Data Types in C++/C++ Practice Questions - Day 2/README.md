@@ -1,4 +1,4 @@
-# Day 2: Continuing the Learning Journey
+# Day 2: Continuing the Learning Journey of Data Types in C++
 
 ## 📚 Today's Practice Question
 
@@ -61,9 +61,21 @@ public:
 - Practiced identifying and returning the size of different data types in C++.
 - Reinforced understanding of basic data types and their memory allocation.
 
-### 🔗 GitHub Repository
+## 🔗 Additional Resources
+- [GeeksforGeeks: Data Type](https://www.geeksforgeeks.org/problems/data-type-1666706751/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=data-type)
+- [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
-You can find the complete code for today's problem [here](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%202%20-%20Exploring%20Data%20Types%20in%20C%2B%2B). 
+## 🛠️ Check out the Code
+You can find the complete code for this day in my [GitHub repository](https://github.com/Itssanthoshhere/DSA/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day%202%20-%20Exploring%20Data%20Types%20in%20C%2B%2B).
+
+---
+
+# My 100 Days of Code Challenge
+I’m documenting my journey through the Striver's A2Z DSA Course/Sheet, where I solve problems daily and solidify my understanding of C++ and Data Structures.
+
+Feel free to follow along and share your thoughts!
+
+---
 
 ## 🔗 Connect with Me
 - **LinkedIn:** [Santhosh VS](https://www.linkedin.com/in/thesanthoshvs/)
