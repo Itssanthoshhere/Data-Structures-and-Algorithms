@@ -1,4 +1,4 @@
-# Day 10: Exploring Pattern 1: Square Star Pattern in C++ 🌟
+# Exploring Pattern 1: Square Star Pattern in C++ 🌟
 
 Welcome to Day 10 of my C++ journey! Today, I began exploring pattern programming, starting with a simple star pattern. This is part of a larger plan to implement and understand 22 different patterns, which will help sharpen my logic-building skills in C++.
 
