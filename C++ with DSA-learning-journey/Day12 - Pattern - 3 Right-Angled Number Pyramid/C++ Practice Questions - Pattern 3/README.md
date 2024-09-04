@@ -50,7 +50,7 @@ int main() {
 - **Pattern Programming:** A valuable exercise for improving logical thinking and problem-solving abilities in C++. Practicing such patterns is particularly useful for visualizing loop iterations and their outcomes.
 
 ## 🔗 Additional Resources
-- [Coding Ninjas: N-Triangles Problem](https://www.codingninjas.com/codestudio/problems/n-triangles_6570181?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems)
+- [Coding Ninjas: N-Triangles Problem](https://www.naukri.com/code360/problems/n-triangles_6573689?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems)
 - [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-3)
 
 ## 🛠️ Check out the Code
