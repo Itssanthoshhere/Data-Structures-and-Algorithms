@@ -54,7 +54,7 @@ int main() {
 - **Incrementing Sequence:** The value of the numbers is incremented sequentially across rows, with each row containing an increasing number of values.
 
 ## 🔗 Additional Resources
-- [Coding Ninjas: Increasing Number Triangle]([liate&utm_campaign=striver_patternproblems&leftPanelTabValue=PROBLEM](https://www.naukri.com/code360/problems/increasing-number-triangle_6581893?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=PROBLEM))
+- [Coding Ninjas: Increasing Number Triangle](https://www.naukri.com/code360/problems/increasing-number-triangle_6581893?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=PROBLEM)
 - [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
 ## 🛠️ Check out the Code
@@ -67,7 +67,3 @@ You can find the complete code for this day in my [GitHub repository](https://gi
 - **GitHub:** [Itssanthoshhere](https://github.com/Itssanthoshhere)
 
 Stay tuned for more updates as I continue to explore C++ and DSA!
-
---- 
-
-This README mirrors your structured learning journey, emphasizing clear explanations and code readability.
