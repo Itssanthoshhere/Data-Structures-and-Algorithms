@@ -17,45 +17,47 @@ Welcome to Day 29 of my C++ learning journey! Today, I explored a visually capti
 ## 📂 Code Example
 
 ```cpp
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-
 void pattern20(int n) {
-    // Upper part of the butterfly
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= i; j++) {
+    int spaces = 2 * n - 2;
+    for (int i = 1; i <= 2 * n - 1; i++) {
+        int stars = i;
+        if (i > n) {
+            stars = 2 * n - i;
+        }
+        
+        // Stars
+        for (int j = 1; j <= stars; j++) {
             cout << "*";
         }
-        for (int j = 1; j <= 2 * (n - i); j++) {
+        
+        // Spaces
+        for (int j = 1; j <= spaces; j++) {
             cout << " ";
         }
-        for (int j = 1; j <= i; j++) {
+        
+        // Stars
+        for (int j = 1; j <= stars; j++) {
             cout << "*";
         }
+        
         cout << endl;
-    }
-
-    // Lower part of the butterfly
-    for (int i = n - 1; i >= 1; i--) {
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
+        
+        if (i < n) {
+            spaces -= 2;
+        } else {
+            spaces += 2;
         }
-        for (int j = 1; j <= 2 * (n - i); j++) {
-            cout << " ";
-        }
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
-        }
-        cout << endl;
     }
 }
 
 int main() {
-    cout << "Symmetric Butterfly Pattern\n";
+    cout << "Pattern - 20: Symmetric-Butterfly Pattern" << endl;
     int n;
     cin >> n;
+    cout << "\n";
     pattern20(n);
-    return 0;
 }
 ```
 
