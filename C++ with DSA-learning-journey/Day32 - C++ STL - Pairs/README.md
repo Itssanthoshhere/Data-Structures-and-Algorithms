@@ -12,7 +12,7 @@ In this practice, we covered:
 
 ## 📂 Files
 
-- **main.cpp**: The main file containing all examples demonstrating the use of pairs in C++.
+- **STL_Pairs.cpp**: The main file containing all examples demonstrating the use of pairs in C++.
 - **README.md**: This file, summarizing the day’s work and the STL concepts explored.
 
 ## 🛠️ Code Snippet
