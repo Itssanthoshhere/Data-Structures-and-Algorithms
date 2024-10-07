@@ -76,7 +76,7 @@ The **Multi Map** is a strong data structure that facilitates efficient storage 
 
 ### 📂 GitHub Repository
 
-You can find the code implementation for Day 42 and other days of my journey here: [GitHub Repository](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey)
+You can find the code implementation for Day 43 and other days of my journey here: [GitHub Repository](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey)
 
 ---
 
