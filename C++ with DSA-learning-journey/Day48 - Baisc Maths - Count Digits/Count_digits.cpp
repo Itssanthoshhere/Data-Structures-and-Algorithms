@@ -27,3 +27,13 @@ int main() {
     cout << "Number of Digits in N: "<< digits << endl;
     return 0;
 }
+
+
+// Alternative Code to solve the Count Digits Problem
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int count(int n) {
+//     int cnt = (int)(log10(n) + 1);
+//     return cnt;
+// }
