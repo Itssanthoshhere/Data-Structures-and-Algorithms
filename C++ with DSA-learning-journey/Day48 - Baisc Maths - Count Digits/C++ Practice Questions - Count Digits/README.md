@@ -60,7 +60,7 @@ int main() {
 - [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
 ## 🛠️ Check out the Code
-You can find the complete code for this problem in my [GitHub repository](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day48%20-%20Baisc%20Maths%20-%20Count%20Digits/C%2B%2B%20Practice%20Questions%20-%20Count%20Digits).
+You can find the complete code for this problem in my [GitHub repository](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day48%20-%20Baisc%20Maths%20-%20Count%20Digits).
 
 ---
 
