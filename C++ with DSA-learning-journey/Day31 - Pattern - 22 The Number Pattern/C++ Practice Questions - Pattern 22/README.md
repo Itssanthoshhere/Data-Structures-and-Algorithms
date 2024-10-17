@@ -65,7 +65,7 @@ int main() {
 - [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
 ## 🛠️ Check out the Code
-You can find the complete code for this day in my [GitHub repository]()https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day31%20-%20Pattern%20-%2022%20The%20Number%20Pattern
+You can find the complete code for this day in my [GitHub repository](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day31%20-%20Pattern%20-%2022%20The%20Number%20Pattern)
 ---
 
 ## 🔗 Connect with Me
