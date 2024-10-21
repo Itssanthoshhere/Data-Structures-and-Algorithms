@@ -68,7 +68,7 @@ int main() {
 - [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
 ## 🛠️ Check out the Code
-You can find the complete code for this day in my [GitHub repository](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day49%20-%20Basic%20Maths%20-%20Reverse%20a%20Number/C%2B%2B%20Practice%20Questions%20-%20Reverse%20a%20Number).
+You can find the complete code for this day in my [GitHub repository](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day49%20-%20Basic%20Maths%20-%20Reverse%20a%20Number/Reverse_a_Number.cpp).
 
 ---
 
