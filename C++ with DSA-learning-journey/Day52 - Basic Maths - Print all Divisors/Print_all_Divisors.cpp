@@ -44,3 +44,26 @@ int main() {
 
     return 0;
 }
+
+
+// void printDivisors(int n) {
+//     vector<int> list;
+//     // 6 * 6 <= 36
+//     // 7 * 7 <= 36 false
+//     // O(sqrt(n))
+//     for (int i = 1; i <= sqrt(n); i++) {
+//         if (n % i == 0) {
+//             list.push_back(i);
+//             if ((n / i) != i) {
+//                 list.push_back(n / i);
+//             }
+//         } 
+//     }
+//     // O(no. of factors * log(no. of factors)) : n is the number factors
+//     sort(list.begin(), list.end());
+
+//     // O(number of factors)
+//     for (auto it : list) {
+//         cout << it << " ";
+//     }
+// }
