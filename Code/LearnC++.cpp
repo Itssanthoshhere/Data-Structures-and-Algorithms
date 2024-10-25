@@ -261,6 +261,8 @@ int main() {
 }
 
 
+--------------------------------------------------------------------------------------------------------
+
 
 cout << "\n" << endl;
 
@@ -293,6 +295,7 @@ int main() {
 
     return 0;
 }
+
 
 // 2. Function with Return Value:
 
@@ -353,7 +356,6 @@ int main() {
 }
 
 
-
 // 5. Array Handling in Functions:
 
 // Function that modifies an array passed by reference
@@ -378,6 +380,8 @@ int main() {
     return 0;
 }
 
+
+--------------------------------------------------------------------------------------------------------
 
 
 cout << "\n" << endl;
@@ -404,7 +408,6 @@ int main() {
     printNumbers(N);
     return 0;
 }
-
 
 
 // 2. Nested Loops and Time Complexity:
@@ -454,3 +457,5 @@ int main() {
     arrayExample(N);
     return 0;
 }
+
+--------------------------------------------------------------------------------------------------------
