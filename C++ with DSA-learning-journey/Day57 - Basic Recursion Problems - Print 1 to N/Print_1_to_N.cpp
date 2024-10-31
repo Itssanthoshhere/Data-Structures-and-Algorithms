@@ -16,24 +16,6 @@ int main() {
   f(1, n);
 }
                                                                                                                                                                                                                                                                             */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #include <bits/stdc++.h>
 using namespace std;
 
