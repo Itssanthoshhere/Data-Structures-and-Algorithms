@@ -72,4 +72,11 @@ void printGfg(int N) {
 
 ## 💻 Full Solution and Code
 Check out the full solution and other DSA recursion problems in my GitHub repository:
-[GitHub - Itssanthoshhere/Data-Structures-and-Algorithms](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day56%20-%20Basic%20Recursion%20Problems%20-%20Print%20name%20N%20times)
+[GitHub - Itssanthoshhere/Data-Structures-and-Algorithms](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day56%20-%20Basic%20Recursion%20Problems%20-%20Print%20name%20N%20times/Print_name_N_times.cpp)
+
+## 🔗 Connect with Me
+- **LinkedIn:** [Santhosh VS](https://www.linkedin.com/in/thesanthoshvs/)
+- **GitHub:** [Itssanthoshhere](https://github.com/Itssanthoshhere)
+
+Stay tuned as I dive deeper into recursive problem-solving and more advanced concepts in C++!
+
