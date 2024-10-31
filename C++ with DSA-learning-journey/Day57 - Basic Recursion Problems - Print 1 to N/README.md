@@ -58,7 +58,7 @@ int main() {
 
 ## 🌟 Solution on GitHub
 
-Check out my complete solution on GitHub: [Day 57 - Basic Recursion Problems](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day57%20-%20Basic%20Recursion%20Problems%20-%20Print%201%20to%20N)
+Check out my complete solution on GitHub: [Day 57 - Basic Recursion Problems](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day57%20-%20Basic%20Recursion%20Problems%20-%20Print%201%20to%20N/Print_1_to_N.cpp)
 
 ---
 
