@@ -51,28 +51,6 @@ int main() {
 }
                                                                                                                                                                                                                  /*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 2. Functional way
 -> Pseudo Code
 void f(n) {
