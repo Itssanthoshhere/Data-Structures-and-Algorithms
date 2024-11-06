@@ -1,4 +1,4 @@
-# Day 64: Basic Recursion - Fibonacci Number
+# Practised a Basic Recursion - Fibonacci Number
 
 This repository contains the solution to the Fibonacci Number problem, implemented recursively in C++. This classic recursion problem is a fundamental example to understand recursion and to practice breaking down a problem into smaller sub-problems.
 
