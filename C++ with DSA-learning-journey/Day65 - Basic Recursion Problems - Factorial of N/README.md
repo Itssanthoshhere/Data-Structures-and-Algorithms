@@ -64,7 +64,7 @@ I also worked on a similar problem related to factorials on [GeeksforGeeks](http
 
 ## 💻 Full Solution and Code
 Check out the full solution and other DSA recursion problems in my GitHub repository:
-[GitHub - Itssanthoshhere/Data-Structures-and-Algorithms](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day65%20-%20Basic%20Recursion%20Problems%20-%20Factorial%20of%20N/factorial_of_n.cpp)
+[GitHub - Itssanthoshhere/Data-Structures-and-Algorithms]([https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day65%20-%20Basic%20Recursion%20Problems%20-%20Factorial%20of%20N/factorial_of_n.cpp](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day65%20-%20Basic%20Recursion%20Problems%20-%20Factorial%20of%20N/Factorial_of_N.cpp))
 
 ## 🔗 Connect with Me
 - **LinkedIn:** [Santhosh VS](https://www.linkedin.com/in/thesanthoshvs/)
