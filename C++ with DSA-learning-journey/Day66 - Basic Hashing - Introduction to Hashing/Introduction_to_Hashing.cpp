@@ -17,49 +17,6 @@ int f(number, a[]) {
     return cnt;
 }
                                                                                                                                                                                                             */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #include <bits/stdc++.h>
 using namespace std;
 
