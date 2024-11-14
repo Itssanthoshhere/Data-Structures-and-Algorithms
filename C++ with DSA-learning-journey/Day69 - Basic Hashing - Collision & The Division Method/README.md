@@ -46,7 +46,7 @@ In rare cases, all elements may hash to the same index, leading to a **collision
 - **Striver's A2Z DSA Course**: [Striver's A2Z DSA Course](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
   
 ## 🛠️ Code Repository
-- **GitHub Link**: [Hashing - Collision & The Division Method](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day69%20-%20Basic%20Hashing%20-%20Collision%20%26%20The%20Division%20Method)
+- **GitHub Link**: https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey
 
 ---
 
