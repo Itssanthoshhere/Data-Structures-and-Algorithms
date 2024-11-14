@@ -1,7 +1,3 @@
-Here's a `README.md` file for Day 69 in the requested format:
-
----
-
 # 🚀 Day 69: Basic Hashing - Understanding Collision & The Division Method in Hashing 🚀
 
 Today, we dive into **hashing**, specifically focusing on the concept of *collision* and the **Division Method**. Hashing maps data into a fixed-size structure, enhancing the efficiency of data retrieval. This technique is crucial for real-time applications where fast lookups are needed.
