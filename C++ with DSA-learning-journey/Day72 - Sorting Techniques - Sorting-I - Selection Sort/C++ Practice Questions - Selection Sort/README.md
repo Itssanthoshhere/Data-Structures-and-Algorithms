@@ -70,7 +70,7 @@ int main() {
 - [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
 ## 🛠️ Check out the Code
-You can find the complete code for this day in my [GitHub repository]([https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day72%20-%20Sorting%20Techniques%20-%20Sorting-I%20-%20Selection%20Sort/C%2B%2B%20Practice%20Questions%20-%20Selection%20Sort](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day72%20-%20Sorting%20Techniques%20-%20Sorting-I%20-%20Selection%20Sort/Selection_Sort.cpp))
+You can find the complete code for this day in my [GitHub repository](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day72%20-%20Sorting%20Techniques%20-%20Sorting-I%20-%20Selection%20Sort/Selection_Sort.cpp)
 
 ---
 
