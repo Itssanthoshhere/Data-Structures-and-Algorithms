@@ -134,7 +134,7 @@ int main() {
 
 ## 🛠️ Check out my code on GitHub
 
-Find the complete code for Day 83 here: [GitHub - Day83 Left Rotate an Array by One Place](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day82%20-%20Solve%20Problems%20on%20Arrays%20%5BEasy%5D%20-%20Remove%20duplicates%20from%20Sorted%20array/Remove_the_duplicates_from_Sorted_array.cpp)
+Find the complete code for Day 83 here: [GitHub - Day83 Left Rotate an Array by One Place](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day83%20-%20Solve%20Problems%20on%20Arrays%20%5BEasy%5D%20-%20Left%20Rotate%20an%20array%20by%20one%20place/Left_Rotate_an_array_by_one_place.cpp)
 
 ---
 
