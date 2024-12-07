@@ -1,7 +1,17 @@
+                                                                                                                                                                                                                                            /*
 // Rotate array by K elements
 
 // Approach 1: Using a temp array 
-// --> For Rotating the Elements to right
+    --> For Rotating the Elements to right (Pseudo Code)
+void Rotatetoright(int arr[], int n, int k) {
+    k = k % n; 
+    int temp[k];
+    for (int i = n - k; i < n; i++) temp[i - n + k] = arr[i];
+    for (int i = n - k - 1; i >= 0; i--) arr[i + k] = arr[i];
+    for (int i = 0; i < k; i++) arr[i] = temp[i];
+}
+                                                                                                                                                                                                                                            */
+// Code
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -45,7 +55,17 @@ int main() {
 }
 
 
-// --> For Rotating the Elements to left
+                                                                                                                                                                                                                                            /*
+// --> For Rotating the Elements to left (Pseudo Code)
+void Rotatetoleft(int arr[], int n, int k) {
+    k = k % n;
+    int temp[k];
+    for (int i = 0; i < k; i++) temp[i] = arr[i];
+    for (int i = 0; i < n - k; i++) arr[i] = arr[i + k];
+    for (int i = n - k; i < n; i++) arr[i] = temp[i - n + k];
+}
+                                                                                                                                                                                                                                            */
+// Code
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -91,8 +111,17 @@ int main() {
 
 
 
+                                                                                                                                                                                                                                            /*
 // Approach 2: Using ” Reversal Algorithm “
-// --> For Rotating Elements to right
+    --> For Rotating Elements to right (Pseudo Code)
+void Rotateright(int arr[], int n, int k) {
+    k = k % n;
+    Reverse(arr, 0, n - k - 1);
+    Reverse(arr, n - k, n - 1);
+    Reverse(arr, 0, n - 1);
+}
+                                                                                                                                                                                                                                            */
+// Code
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -136,7 +165,16 @@ int main() {
 }
 
 
-// --> For Rotating Elements to left
+                                                                                                                                                                                                                                            /*
+// --> For Rotating Elements to left (Pseudo Code)
+void Rotateleft(int arr[], int n, int k) {
+    k = k % n;
+    Reverse(arr, 0, k - 1);
+    Reverse(arr, k, n - 1);
+    Reverse(arr, 0, n - 1);
+}
+                                                                                                                                                                                                                                            */
+// Code
 #include <bits/stdc++.h>
 using namespace std;
 
