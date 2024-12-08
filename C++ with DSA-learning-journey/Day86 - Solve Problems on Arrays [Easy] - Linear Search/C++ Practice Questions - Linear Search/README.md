@@ -3,7 +3,7 @@
 Welcome to Day 86 of my C++ and DSA learning journey! Today, I worked on a problem focused on searching for an element in a **sorted array**. This is a classic problem that can be efficiently solved using the **Linear Search** technique, leveraging the fact that the array is already sorted in ascending order.
 
 ## 📚 Topic Covered
-- **Sorted Array Search:** In this problem, we utilized the sorted nature of the array and performed a binary search to quickly locate an element. It was an excellent exercise for refining my understanding of searching algorithms and improving my problem-solving speed.
+- **Sorted Array Search:** In this problem, we utilized the sorted nature of the array and performed a linear search to quickly locate an element. It was an excellent exercise for refining my understanding of searching algorithms and improving my problem-solving speed.
 
 ## 📝 Problem Statement
 ### Problem: Search for an Element in a Sorted Array
@@ -60,12 +60,12 @@ int main() {
 ```
 
 ## 🗝️ Key Learnings
-- **Efficient Searching:** Using **binary search** on a sorted array allows us to significantly reduce the time complexity to **O(log n)**, compared to a linear search, which is O(n).
-- **Binary Search Optimization:** This technique is especially useful when dealing with large datasets, where a linear search would be too slow.
+- **Efficient Searching:** Using **linear search** on a sorted array allows us to significantly reduce the time complexity to **O(log n)**, compared to a linear search, which is O(n).
+- **linear Search Optimization:** This technique is especially useful when dealing with large datasets, where a linear search would be too slow.
 - **Array Properties:** The sorted nature of the array allows us to easily narrow down the search space, optimizing the search process.
 
 ## 🔗 Additional Resources
-- [GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/linear-search/)
 - [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
 ## 🛠️ Check out the Code
