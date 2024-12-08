@@ -65,7 +65,7 @@ int main() {
 - **Array Properties:** The sorted nature of the array allows us to easily narrow down the search space, optimizing the search process.
 
 ## 🔗 Additional Resources
-- [GeeksforGeeks: Binary Search](https://www.geeksforgeeks.org/binary-search/)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)
 - [Striver's A2Z DSA Course/Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
 ## 🛠️ Check out the Code
