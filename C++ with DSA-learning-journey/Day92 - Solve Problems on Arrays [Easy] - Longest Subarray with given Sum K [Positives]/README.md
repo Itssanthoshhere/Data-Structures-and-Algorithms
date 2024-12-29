@@ -96,7 +96,7 @@ int main() {
 - **Striver's A2Z DSA Course**: [Striver's A2Z DSA Course Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 
 ## 🛠️ Check out my code on GitHub
-You can find the complete code for Day 92 here: [GitHub - Day92 Longest Subarray with Sum K](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day92%20-%20Solve%20Problems%20on%20Arrays%20%5BEasy%5D%20-%20Longest%20Subarray%20with%20given%20Sum%20K%20%5BPositives%5D)
+You can find the complete code for Day 92 here: [GitHub - Day92 Longest Subarray with Sum K](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day92%20-%20Solve%20Problems%20on%20Arrays%20%5BEasy%5D%20-%20Longest%20Subarray%20with%20given%20Sum%20K%20%5BPositives%5D/Longest_Subarray_with_given_Sum_K%5BPositives%5D.cpp)
 
 ---
 
