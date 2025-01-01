@@ -1,0 +1,1659 @@
+// Find the Largest element in an array
+
+// Brute Force Approach -> Solution1: Using Sorting
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to sort the array and return the largest element
+int sortArr(vector<int>& arr) {
+    sort(arr.begin(), arr.end());
+    return arr[arr.size() - ];
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of elements in the first array: ";
+    cin >> n;
+
+    vector<int> arr1(n);
+    cout << "Enter the elements of the first array:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr1[i];
+    }
+
+    cout << "Enter the number of the elements in the second array: ";
+    cin >> n;
+
+    vector<int> arr2(n);
+    cout << "Enter the elements of the second array:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr2[i];
+    }
+
+    cout << "The Largest element in the first array is: " << sortArr(arr1) << endl;
+    cout << "The Largest element in the second array is: " << sortArr(arr2) << endl;
+
+    return 0;
+}
+
+
+
+                                                                                                                                                                                                                                            /*
+// Recursive Approach -> Solution2: Using a max variable
+
+-> Pseudo Code
+largest = a[0]
+for (i = 0; i < n; i++) {
+    if (a[i] > largest) {
+        largest = a[i];
+    }
+}
+
+print(largest);
+                                                                                                                                                                                                            */
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to find the largest element in an array
+int findlargestElement(int arr[], int n) {
+    int max = arr[0];
+    for (int i = 0; i < n; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+        }
+    }
+
+    return max;
+}
+
+int main() {
+    int n;
+
+    cout << "Enter the number of elements in the first array: ";
+    cin >> n;
+
+    int arr1[n];
+    cout << "Enter the elements of the first array:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr1[i];
+    }
+
+
+    int max = findlargestElement(arr1, n);
+    cout << "The largest element in the first array is: " << max << endl;
+
+
+    cout << "Enter the number of elements in the second array: ";
+    cin >> n;
+
+    int arr2[n];
+    cout << "Enter the elements of the second array:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr2[i];
+    }
+
+    max = findlargestElement(arr2, n);
+    cout << "The largest element in the second array is: " << max << endl;
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+// Second Largest Element in an Array without sorting
+
+// Solution 1: (Brute Force) [this approach only works if there are no duplicates]
+#include <bits/stdc++.h>
+using namespace std;
+
+void getElements(int arr[], int n) {
+    if (n == 0 || n == 1) {
+        cout << -1 << " " < -1 << endl; // Edge case when only one element is present in the array
+        return;
+    }
+
+    sort(arr, arr + n);
+    int small = arr[1];
+    int large = arr[n - 2];
+    cout << "Second smallest is " << small << endl;
+    cout << "Second largest is " << large << endl;
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of elements in the array: ";
+    cin >> n;
+
+    if (n <= 0) {
+        cout << "Invalid array size." << endl;
+        return 0;
+    }
+
+    int arr[n];
+    cout << "Enter " << n << " elements: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    getElements(arr, n);
+    return 0;
+}
+
+
+
+
+// Solution 2(Better Solution)
+#include <bits/stdc++.h>
+using namespace std;
+
+void getElements(int arr[], int n) {
+    if (n == 0 || n == 1) {
+        cout << -1 << " " << -1 << endl; // edge case when only one element is present in array
+    }
+
+    int small = INT_MAX, second_small = INT_MAX;
+    int large = INT_MIN, second_large = INT_MIN;
+
+    for (int i = 0; i < n; i++) {
+        small = min(small, arr[i]);
+        large = max(large, arr[i]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] < second_small && arr[i] != small) {
+            second_small = arr[i];
+        }
+        if (arr[i] < second_large && arr[i] != large) {
+            second_large = arr[i];
+        }
+
+        cout << "Second smallest is " << second_small << endl;
+        cout << "Second largest is " << second_large << endl;
+    }
+}
+
+int main() {
+    int arr[] = {1, 2, 4, 6, 7, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    getElements(arr, n);
+    return 0;
+}
+
+
+
+// Solution 3(Best Solution)
+#include <bits/stdc++.h>
+using namespace std;
+
+int secondSmallest(int arr[], int n) {
+    if (n < 2) {
+        return -1;
+    }
+
+    int small = INT_MAX;
+    int second_small = INT_MAX;
+    
+    for (int i = 0; i < n; i++) {
+        if (arr[i] < small) {
+            second_small = small;
+            small = arr[i];
+        } else if(arr[i] < second_small && arr[i] != small) {
+            second_small = arr[i];
+        }
+    }
+
+    return second_small;
+}
+
+int secondLargest(int arr[], int n) {
+    if (n < 2) {
+        return -1;
+    }
+
+    int large = INT_MIN, second_large = INT_MIN;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > large) {
+            second_large = large;
+            large = arr[i];
+        }
+        else if (arr[i] > second_large && arr[i] != large) {
+            second_large = arr[i];
+        }
+    }
+    return second_large;
+}
+
+int main() {
+    int arr[] = {1,2,3,4,7,7,5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    
+    int sS = secondSmallest(arr, n);
+    int sL = secondLargest(arr, n);
+
+    cout << "Second smallest is " << sS << endl;
+    cout << "Second largest is " << sL << endl;
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+// Check if the array is sorted
+
+// Approach: Brute Force
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isSorted(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[i]) {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+int main() {
+    int arr[] = {1,2,3,4,5};
+    int n = 5;
+    bool ans = isSorted(arr, n);
+
+    if (ans) {
+        cout << "True" << endl;
+    } else {
+        cout << "False" << endl;
+    }
+
+    return 0;
+}
+
+
+
+// Approach: Efficient (Single traversal)
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isSorted(int arr[], int n) {
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < arr[i - 1]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+int main() {
+    int arr[] = {1,2,3,4,5};
+    int n = 5;
+
+    printf("%s", isSorted(arr, n) ? "True" : "False");
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+// Remove duplicates from Sorted array
+
+// Approach: Brute Force
+#include <bits/stdc++.h>
+using namespace std;
+
+int removeDuplicates(int arr[], int n) {
+    set <int> set;
+    for (int i = 0; i < n; i++) {
+        set.insert(arr[i]);
+    }
+
+    int k = set.size();
+    int j = 0;
+    for (int x : set) {
+        arr[j++] = x;
+    }
+
+    return k;
+}
+
+int main() {
+    int arr[] = {1,1,2,2,2,3,3};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int k = removeDuplicates(arr, n);
+    cout << "The array after removing dulicates elements is" << endl;
+    for (int i = 0; i < k; i++) {
+        cout << arr[i] << " ";
+    }
+}
+
+
+// Optimal Approach (Two pointers)
+#include <bits/stdc++.h>
+using namespace std;
+
+int removeDuplicates(int arr[], int n) {
+    int i = 0;
+    for (int j = 1; j < n; j++) {
+        if (arr[i] != arr[j]) {
+            i++;
+            arr[i] = arr[j];
+        }
+    }
+    return i + 1;
+}
+
+int main() {
+    int arr[] = {1,1,2,2,2,3,3};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int k = removeDuplicates(arr, n);
+
+    cout << "The array after removing duplictes elements is " << end;
+    for (int i = 0; i < k; i++) {
+        cout << arr[i] << " ";
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+// Left Rotate an array by one place
+
+// Approach: Brute Force
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve(int arr[], int n) {
+    int temp[n];
+    for (int i = 1; i < n; i++) {
+        temp[i - 1] = arr[i];
+    }
+
+    temp[n - 1] = arr[0];
+    for (int i = 0; i < n; i++) {
+        cout << temp[i] << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    int n = 5;
+    int arr[] = {1,2,3,4,5};
+    solve(arr, n);
+}
+
+
+
+// Optimal Approach 
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve(int arr[], int n) {
+    int temp = arr[0]; // Storing the first element of array in a variable
+    for (int i = 0; i < n; i++) {
+        arr[i] = arr[n - 1];
+    }
+
+    arr[n - 1] = temp;
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+}
+
+int main() {
+    int n = 5;
+    int arr[] = {1,2,3,4,5};
+    solve(arr, n);
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+                                                                                                                                                                                                                                            /*
+// Rotate array by K elements
+
+// Approach 1: Using a temp array 
+    --> For Rotating the Elements to right (Pseudo Code)
+void Rotatetoright(int arr[], int n, int k) {
+    k = k % n; 
+    int temp[k];
+    for (int i = n - k; i < n; i++) temp[i - n + k] = arr[i];
+    for (int i = n - k - 1; i >= 0; i--) arr[i + k] = arr[i];
+    for (int i = 0; i < k; i++) arr[i] = temp[i];
+}
+                                                                                                                                                                                                                                            */
+// Code
+#include <bits/stdc++.h>
+using namespace std;
+
+void Rotateright(int arr[], int n, int k) {
+    if (n == 0) {
+        return;
+    }
+
+    k = k % n;
+    if (k > n) {
+        return;
+    }
+
+    int temp[k];
+    for (int i = n - k; i < n; i++) {
+        temp[i - n + k] = arr[i];
+    }
+
+    for (int i = n - k - 1; i >= 0; i--) {
+        arr[i + k] = arr[i];
+    }
+
+    for (int i = 0; i < k; i++) {
+        arr[i] = temp[i];
+    }
+}
+
+int main() {
+    int n = 7; 
+    int arr[] = {1,2,3,4,5,6,7};
+    int k = 2;
+    Rotateright(arr, n, k);
+
+    cout << "After the elements to right: " << endl;
+
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
+
+
+                                                                                                                                                                                                                                            /*
+// --> For Rotating the Elements to left (Pseudo Code)
+void Rotatetoleft(int arr[], int n, int k) {
+    k = k % n;
+    int temp[k];
+    for (int i = 0; i < k; i++) temp[i] = arr[i];
+    for (int i = 0; i < n - k; i++) arr[i] = arr[i + k];
+    for (int i = n - k; i < n; i++) arr[i] = temp[i - n + k];
+}
+                                                                                                                                                                                                                                            */
+// Code
+#include <bits/stdc++.h>
+using namespace std;
+
+void Rotateleft(int arr[], int n, int k) {
+    if (n == 0) {
+        return;
+    }
+
+    k = k % n;
+    if (k > n) {
+        return;
+    }
+
+    int temp[k];
+    for (int i = 0; i< k; i++) {
+        temp[i] = arr[i];
+    }
+
+    for (int i = 0; i < n - k; i++) {
+        arr[i] = arr[i + k];
+    }
+
+    for (int i = n - k; i < n; i++) {
+        arr[i] = temp[i = n + k];
+    }
+}
+
+int main() {
+    int n = 7;
+    int arr[] = {1,2,3,4,5,6,7};
+    
+    int k = 2;
+    Rotateleft(arr, n, k);
+
+    cout << "After Rotating the elements to left: " << endl;
+
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
+
+
+
+                                                                                                                                                                                                                                            /*
+// Approach 2: Using ” Reversal Algorithm “
+    --> For Rotating Elements to right (Pseudo Code)
+void Rotateright(int arr[], int n, int k) {
+    k = k % n;
+    Reverse(arr, 0, n - k - 1);
+    Reverse(arr, n - k, n - 1);
+    Reverse(arr, 0, n - 1);
+}
+                                                                                                                                                                                                                                            */
+// Code
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to Reverse the array
+void Reverse(int arr[], int start, int end) {
+    while (start <= end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+// Function to Rotate k elements to right
+void Rotateright(int arr[], int n, int k) {
+    // Reverse first n - k elements
+    Reverse(arr, 0, n - k - 1);
+
+    // Reverse last k elements
+    Reverse(arr, n - k, n - 1);
+
+    // Reverse whole array
+    Reverse(arr, 0, n - 1);
+}
+
+int main() {
+    int arr[] = {1,2,3,4,5,6,7};
+    int n = 7;
+    int k = 2;
+    Rotateright(arr, n, k);
+
+    cout << "After Rotating the k element to right: ";
+
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
+    return 0;
+}
+
+
+                                                                                                                                                                                                                                            /*
+// --> For Rotating Elements to left (Pseudo Code)
+void Rotateleft(int arr[], int n, int k) {
+    k = k % n;
+    Reverse(arr, 0, k - 1);
+    Reverse(arr, k, n - 1);
+    Reverse(arr, 0, n - 1);
+}
+                                                                                                                                                                                                                                            */
+// Code
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to Reverse the array
+void Reverse(int arr[], int start, int end) {
+    while (start <= end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+// Function to Rotate k elements to left
+void Rotateleft(int arr[], int n, int k) {
+    // Reverse first k elements
+    Reverse(arr, 0, k - 1);
+
+    // Reverse last n - k elements
+    Reverse(arr, k, n - 1);
+
+    // Reverse whole array
+    Reverse(arr, 0, n - 1);
+}
+
+int main() {
+    int arr[] = {1,2,3,4,5,6,7};
+    int n = 7;
+    int k = 2;
+    Rotateleft(arr, n, k);
+
+    cout << "After Rotating the k elements to left: " << endl;
+
+    for (int i = 0; i < n; i++ ){
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+// Move Zeros to end
+
+// Brute Force Approach: 
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> moveZeros(int n, vector<int> a) {
+    // Temporary array
+    vector<int> temp;
+
+    // Copy non-zero elements from original -> tem array:
+    for (int i = 0; i < n; i++) {
+        if (a[i] != 0) {
+            temp.push_back(a[i]);
+        }
+    }
+
+    // Number of non-zero elements
+    int nz = temp.size();
+
+    // Copy elements from temp fill first nz fields of original array:
+    for (int i = 0; i< nz; i++) {
+        a[i] = temp[i];
+    }
+
+    // Fill rest of the cells with 0:
+    for (int i = nz; i < n; i++) {
+        a[i] = 0;
+    }
+
+    return a;
+}
+
+int main() {
+    vector<int> arr = {1,0,2,3,2,0,0,4,5};
+    int n = 10;
+    vector<int> ans = moveZeros(n, arr);
+    for (auto &it : ans) {
+        cout << it << " ";
+    }
+
+    cout << '\n';
+    return 0;
+}
+
+
+
+// Optimal Approach(Using 2 pointers): 
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> moveZeros(int n, vector<int> a) {
+    int j = -1;
+
+    // Place the pointer j:
+    for (int i = 0; i < n; i++) {
+        if (a[i] == 0) {
+            j = i;
+            break;
+        }
+    }
+
+    // No non-zero elements:
+    if (j == -1) {
+        return a;
+    }
+
+    // Move the pointers i & j and swap accordingly:
+    for (int i = j + 1; i < n; i++) {
+        if (a[i] != 0) {
+            swap(a[i], a[j]);
+            j++;
+        }
+    }
+    return a;
+}
+
+int main() {
+    vector<int> arr = {1,0,2,3,2,0,0,4,5,1};
+    int n = 10;
+    vector<int> ans = moveZeros(n, arr);
+    for (auto &it : ans) {
+        cout << it << " ";
+    }
+
+    cout << '\n';
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+// Linear Search
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int search(int arr[], int n, int num) {
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == num) {
+            return i;
+        }
+    }
+
+    return -1;
+}
+
+int main() {
+    int arr[] = {1,2,3,4,5};
+    int num = 4;
+
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int val = search(arr, n, num);
+    
+    cout << val;
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+	
+// Find the Union (Union of Two Sorted Arrays)
+
+// Solution 1: Using Map
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> FindUnion(int arr1[], int arr2[], int n, int m) {
+    map <int, int> freq;
+    vector <int> Union;
+
+    for (int i = 0; i < n; i++) {
+        freq[arr1[i]]++;
+    }
+
+    for (int i = 0; i < m; i++) {
+        freq[arr2[i]]++;
+    }
+
+    for (auto & it: freq) {
+        Union.push_back(it.first);
+    }
+
+    return Union;
+}
+
+int main() {
+    int n = 10;
+    int m = 7;
+
+    int arr1[] = {1,2,3,4,5,6,7,8,9,10};
+    int arr2[] = {2,3,4,4,5,11,12};
+
+    vector<int> Union = FindUnion(arr1, arr2, n, m);
+
+    cout << "Union of arr1 and arr2 is " << endl;
+
+    for (auto & val: Union) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+
+
+
+// Solution 2: Using Set (Brute Force Approach)
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> FindUnion(int arr1[], int arr2[], int n, int m) {
+    set <int> s;
+    vector<int> Union;
+
+    for (int i = 0; i< n; i++) {
+        s.insert(arr1[i]);
+    }
+
+    for (int i = 0; i < m; i++) {
+        s.insert(arr2[i]);
+    }
+
+    for (auto & it: s) {
+        Union.push_back(it);
+    }
+
+    return Union;
+}
+
+int main() {
+    int n = 10; 
+    int m = 7;
+
+    int arr1[] = {1,2,3,4,5,6,7,8,9,10};
+    int arr2[] = {2,3,4,4,5,11,12};
+
+    vector<int> Union = FindUnion(arr1, arr2, n, m);
+
+    cout << "Union of arr1 and arr2 is " << endl;
+
+    for (auto & val: Union) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+
+
+
+// Solution 3: Two pointers (Optimal Approach)
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> FindUnion(int arr1[], int arr2[], int n, int m) {
+    int i = 0, j = 0; // pointers
+    vector<int> Union; // Union vector
+
+    while (i < n && j < m) {
+        // Case 1: arr1[i] < arr2[j]
+        if (arr1[i] < arr2[j]) {
+            if (Union.size() == 0 || Union.back() != arr1[i]) {
+                Union.push_back(arr1[i]);
+            }
+            i++;
+        }
+        // Case 2: arr1[i] > arr2[j]
+        else if (arr1[i] > arr2[j]) {
+            if (Union.size() == 0 || Union.back() != arr2[j]) {
+                Union.push_back(arr2[j]);
+            }
+            j++;
+        }
+        // Case 3: arr1[i] == arr2[j]
+        else {
+            if (Union.size() == 0 || Union.back() != arr1[i]) {
+                Union.push_back(arr1[i]);
+            }
+            i++;
+            j++;
+        }
+    }
+
+    // If any elements are left in arr1
+    while (i < n) {
+        if (Union.back() != arr1[i]) {
+            Union.push_back(arr1[i]);
+        }
+        i++;
+    }
+
+    // If any elements are left in arr2
+    while (j < m) {
+        if (Union.back() != arr2[j]) {
+            Union.push_back(arr2[j]);
+        }
+        j++;
+    }
+
+    return Union;
+}
+
+int main() {
+    int n = 10, m = 7;
+    int arr1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int arr2[] = {2, 3, 4, 4, 5, 11, 12};
+
+    vector<int> Union = FindUnion(arr1, arr2, n, m);
+
+    cout << "Union of arr1 and arr2 is: " << endl;
+    for (auto &val : Union) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+// Find the intersection (Intersection of two sorted arrays)
+
+// Solution 1: Brute Force Approach
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> intersectionOfArrays(vector<int>A, vector<int>B) {
+    vector<int> ans;
+
+    // To maintain visited
+    vector<int> visited(B.size(), 0);
+    int i = 0;
+    int j = 0;
+
+    for (i = 0; i < A.size(); i++) {
+        for (j = 0; j < B.size(); j++) {
+            if (A[i] == B[j] && visited[j] == 0) {
+                // If elements matches and has not been matched with any other before
+                ans.push_back(B[j]);
+                visited[j] = 1;
+
+                break;
+            }
+            else if (B[j] > A[i]) {
+                break; // because array is sorted, element will not be beyond this
+            }
+        }
+    }
+
+    return ans;
+}
+
+int main() {
+    // Array Initialisation
+    vector<int> A {1,2,3,3,4,5,6,7};
+    vector<int> B {3,3,4,4,5,8};
+
+    vector<int> ans = intersectionOfArrays(A, B);
+
+    for (int i = 0; i < ans.size(); i++) {
+        cout << ans[i] << " ";
+    }
+
+    return 0;
+}
+
+
+
+// Solution 2: Two pointers (Optimal Approach)
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> intersectionOfArrays(vector<int> A, vector<int> B) {
+
+    // Declare ans array
+    vector<int> ans;
+
+    int i = 0;
+    int j = 0;
+
+    // To traverse the arrays
+    while (i < A.size() && j < B.size()) {
+        // If current element in i is smaller
+        if (A[i] < B[j]) {
+            i++;
+        } else if (B[j] < A[i]) {
+            j++;
+        }
+        else {
+            // Both element are equal 
+            ans.push_back(A[i]);
+            i++;
+            j++;
+        }
+    }
+
+    return ans;
+}
+
+int main() {
+    // Array Initialisation
+    vector<int> A {1,2,3,3,4,5,6,7};
+    vector<int> B {3,3,4,4,5,8};
+
+    vector<int> ans = intersectionOfArrays(A, B);
+
+    for (int i = 0; i < ans.size(); i++) {
+        cout << ans[i] << " ";
+    }
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+// Find the missing number in an array
+
+// Solution 1: Brute Force Approach
+#include <bits/stdc++.h>
+using namespace std;
+
+int missingNumber(vector<int> &a, int N) {
+    // Outer loop that runs from 1 to N:
+    for (int i = 1; i <= N; i++) {
+        // Flag variable to check if an element exists
+        int flag = 0;
+
+        // Search the element using linear search:
+        for (int j = 0; j < N - 1; j++) {
+            if (a[j] == i) {
+                // i is present in the array:
+                flag = 1;
+                break;
+            }
+        }
+
+        // Check if the element is missing i.e flag == 0:
+        if (flag == 0) {
+            return i;
+        }
+    }
+
+    // The following line will never execute. It is just to avoid warnings.
+    return -1;
+}
+
+int main() {
+    int N = 5;
+    vector<int> a = {1, 2, 4, 5};
+
+    int ans = missingNumber(a, N);
+    cout << "The missing number is: " << ans << endl;
+
+    return 0;
+}
+
+
+
+// Solution 2: Better Approach (Using Hashing)
+#include <bits/stdc++.h>
+using namespace std;
+
+int missingNumber(vector<int> &a, int N) {
+    int hash[N + 1] = {0}; // Hash array
+
+    // Strong the frequencies:
+    for (int i = 0; i < N - 1; i++) {
+        hash[a[i]]++;
+    }
+
+    // Checking the frequencies for numbers 1 to N:
+    for (int j = 0; j <= N; j++) {
+        if (hash[i] == 0) {
+            return i;
+        }
+    }
+
+    // The following line will never execute. It is just to avoid warnings.
+    return -1;
+}
+
+int main() {
+    int N = 5;
+    vector<int> a = {1, 2, 4, 5};
+
+    int ans = missingNumber(a, N);
+    cout << "The missing number is: " << ans << endl;
+
+    return 0;
+}
+
+
+
+// Solution 3: Optimal Approach - 1 Summation Approach
+#include <bits/stdc++.h>
+using namespace std;
+
+int missingNumber(vector<int> &a, int N) {
+    // Summation of first N numbers:
+    int sum = N * (N + 1) / 2;
+
+    // Summation of all array elements:
+    int s2 = 0;
+    for (int i = 0; i < N - 1; i++) {
+        s2 += a[i];
+    }
+
+    int missingNum = sum - s2;
+    return missingNum;
+}
+
+int main() {
+    int N = 5;
+    vector<int> a = {1, 2, 4, 5};
+
+    int ans = missingNumber(a, N);
+    cout << "The missing number is: " << ans << endl;
+
+    return 0;
+}
+
+
+
+// Solution 3: Optimal Approach - 2 XOR Approach
+#include <bits/stdc++.h>
+using namespace std;
+
+int missingNumber(vector<int> &a, int N) {
+    int xor1 = 0;
+    int xor2 = 0;
+
+    for (int i - 0; i < N - 1; i++) {
+        xor2 = xor2 ^ a[i]; // XOR of array elements
+        xor1 = xor1 ^ (i + 1); // XOR upto [1...N-1]
+    }
+
+    xor1 = xor1 ^ N; // XOR upto [1...N]
+
+    return xor1 ^ xor2; // the missing number
+}
+
+int main() {
+    int N = 5;
+    vector<int> a = {1, 2, 4, 5};
+
+    int ans = missingNumber(a, N);
+    cout << "The missing number is: " << ans << endl;
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+// Maximum Consecutive Ones
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class solution {
+    int findMaxConsecutiveOnes(vector<int> &nums) {
+        int cnt = 0;
+        int maxi = 0;
+        for (int i = 0; i < nums.size()l i++) {
+            if (nums[i] == 1) {
+                cnt++;
+            } else {
+                cnt = 0;
+            }
+
+            maxi = max(maxi, cnt);
+        }
+
+        return maxi;
+    }
+};
+
+int main() {
+    vector<int> nums = {1,1,0,1,1,1};
+    solution obj;
+
+    int ans = obj.findMaxConsecutiveOnes(nums);
+    cout << "The maximum consecutive 1's are " << ans;
+    
+    return 0;
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Find the number that appears once, and other numbers twice
+
+// Solution 1: Brute Force Approach
+#include <bits/stdc++.h>
+using namespace std;
+
+int getSingleElement(vector<int> &arr) {
+    // Size of the array:
+    int n = arr.size();
+
+    // Run a loop for selecting elements:
+    for (int i = 0; i < n; i++) {
+        int num = arr[i]; // selected element
+        int cnt = 0;
+
+        // Find the occurence using Linear Search:
+        for (int j = 0; j < n; j++) {
+            if (arr[j] == num) {
+                cnt++;
+            }
+        }
+
+        // If the occurence is 1 return ans:
+        if (cnt == 1) {
+            return num;
+        }
+    }
+}
+
+int main() {
+    vector<int> arr = {4,1,2,1,2};
+
+    int ans = getSingleElement(arr);
+    cout << "The single element is: " << ans << endl;
+
+    return 0;
+}
+
+
+
+// Solution 2: Better Approach - 1 (Using Hashing)
+#include <bits/stdc++.h>
+using namespace std;
+
+int getSingleElement(vector<int> &arr) {
+    // Size of the array
+    int n = arr.size();
+
+    // Find the maximum element:
+    int maxi = arr[0];
+    for (int i = 0; i < n; i++) {
+        maxi = max(maxi, arr[i]);
+    }
+
+    // Declare hash array of size maxi + 1 and hash the given array:
+    vector<int> hash(maxi + 1, 0);
+    for (int i = 0; i < n; i++) {
+        hash[arr[i]]++;
+    }
+
+    // Find the single element ans return the answer:
+    for (int i = 0; i < n; i++) {
+        if (hash[arr[i]] == 1) {
+            return arr[i];
+        }
+    }
+
+    // This line will never execute, if the array contains a single element.
+    return -1;
+}
+
+int main() {
+    vector<int> arr = {4,1,2,1,2};
+
+    int ans = getSingleElement(arr);
+    cout << "The single element is: " << ans << endl;
+
+    return 0;
+}
+
+
+
+// Solution 2: Better Approach - 2 (Hashing using the map data structure)
+#include <bits/stdc++.h>
+using namespace std;
+
+int getSingleElement(vector<int> &arr) {
+    // Size of the array
+    int n = arr.size();
+
+    // Declare the hashmap and hash the given array:
+    map<int, int> mpp;
+    for (int i = 0; i < n; i++) {
+        mpp[arr[i]]++;
+    }
+
+    // Find the single element and return the answer:
+    for (auto it : mpp) {
+        if (it.second == 1) {
+            return it.first;
+        }
+    }
+
+    // This line will never execute, if the array contains a single element.
+}
+
+int main() {
+    vector<int> arr = {4,1,2,1,2};
+
+    int ans = getSingleElement(arr);
+    cout << "The single element is: " << ans << endl;
+
+    return 0;
+}
+
+
+
+// Solution 3: Optimal Approach(Using XOR): 
+#include <bits/stdc++.h>
+using namespace std;
+
+int getSingleElement(vector<int> &arr) {
+    // Size of the array
+    int n = arr.size();
+
+    // XOR all the elements:
+    int xor = 0;
+    for (int i = 0; i < n; i++) {
+        xor = xor ^ arr[i];
+    }
+    
+    return xor;
+}
+
+int main() {
+    vector<int> arr = {4,1,2,1,2};
+
+    int ans = getSingleElement(arr);
+    cout << "The single element is: " << ans << endl;
+
+    return 0;
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Longest subarray with given sum K(positives)
+
+// Solution 1: Brute Force Approach
+#include <bits/stdc++.h>
+using namespace std;
+
+int getLongestSubarray(vector<int> &a, long long k) {
+    int n = a.size(); // size of the array
+
+    int len = 0;
+
+    // Starting Index
+    for (int i = 0; i < n; i++) { 
+        // Ending Index
+        for (int j = i; j < n; j++) { 
+            // Add all the elements of subarray = a[i...j]:
+            long long s = 0;
+            for (int K = i; K <= j; K++) {
+                s += a[k];
+            }
+
+            if (s == K) {
+                len = max(len, j - i + 1);
+            }
+        }
+    }
+    
+    return len;
+}
+
+int main() {
+    vector<int> a = {2,3,5,1,9};
+    long long k = 10;
+
+    int len = getLongestSubarray(a, k);
+    cout << "The length of the longest subarray is: " << len << "\n";
+
+    return 0;
+}
+
+
+
+// Solution 2: Optimizing the Naive Approach (Using two loops): 
+#include <bits/stdc++.h>
+using namespace std;
+
+int getLongestSubarray(vector<int> &a, long long k) {
+    int n = a.size(); // size of the array
+
+    int len = 0;
+
+    // Starting Index
+    for (int i = 0; i < n; i++) { 
+        // Sum Variable
+        long long s = 0;
+
+        // Ending Index
+        for (int j = i; j < n; j++) {
+            // Add the current element to the subarray a[i...j-1]:
+            s += a[j];
+
+            if (s == k) {
+                len = max(len, j - i + 1);
+            }
+        }
+
+        return len;
+    }
+}
+
+int main() {
+    vector<int> a = {2,3,5,1,9};
+    long long k = 10;
+
+    int len = getLongestSubarray(a, k);
+    cout << "The length of the longest subarray is: " << len << "\n";
+
+    return 0;
+}
+
+
+
+// Solution 3: Better Approach(Using Hashing):
+#include <bits/stdc++.h>
+using namespace std;
+
+int getLongestSubarray(vector<int> &a, long long k) {
+    int n = a.size(); // size of the array
+
+    map<long long, int> preSumMap;
+    long long sum = 0;
+
+    int maxLen = 0;
+    for (int i = 0; i < n; i++) {
+        // Calculate the prefix sum till index i:
+        sum += a[i];
+
+        // If the sum = k, update the maxLen:
+        if (sum == k) {
+            maxLen = max(maxLen, i + 1);
+        }
+
+        // Calculate the sum of remaining part  i.e. x - k:
+        long long rem = sum - k;
+
+        // Calculate the Length and Update maxLen:
+        if (preSumMap.find(rem) != preSumMap.end()) {
+            int len = i - preSumMap[rem];
+            maxLen = max(maxLen, len);
+        }
+
+        // Finally, update the map checking the conditions:
+        if (preSumMap.find(sum) == preSumMap.end()) {
+            preSumMap[sum] = i;
+        }
+    }
+
+    return maxLen;
+}
+
+int main() {
+    vector<int> a = {2,3,5,1,9};
+    long long k = 10;
+
+    int len = getLongestSubarray(a, k);
+    cout << "The length of the longest subarray is: " << len << "\n";
+
+    return 0;
+}
+
+
+
+// Solution 4: Optimal Approach (Using 2 pointers): 
+#include <bits/stdc++.h>
+using namespace std;
+
+int getLongestSubarray(vector<int> &a, long long k) {
+    int n = a.size(); // size of the array
+
+    // 2 pointers
+    int left = 0; 
+    int right = 0;
+
+    long long sum = a[0];
+    int maxLen = 0;
+
+    while (right < n) {
+        // If sum > k, reduce the subarray from Left until sum becomes Less or equal to k:
+        while (left <= right && sum > k) {
+            sum -= a[left];
+            left++;
+        }
+
+        // If sum = k, update the maxLen i.e. answer:
+        if (sum == k) {
+            maxLen = max(maxLen, right - left + 1);
+        }
+
+        // Move forward with right pointer:
+        right++;
+        if (right < n) {
+            sum += a[right];
+        }
+    }
+
+    return maxLen;
+}
+
+int main() {
+    vector<int> a = {2,3,5,1,9};
+    long long k = 10;
+
+    int len = getLongestSubarray(a, k);
+    cout << "The length of the longest subarray is: " << len << "\n";
+
+    return 0;
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Longest subarray with sum K (Positives + Negatives)
+
+// Solution 1: Naive Approach (Brute-force approach): 
+#include <bits/stdc++.h>
+using namespace std;
+
+int getLongestSubarray(vector<int> &a, int k) {
+    int n = a.size(); // size of the array
+
+    int len = 0;
+
+    // Starting Index
+    for (int i = 0; i < n; i++) {
+        // Ending Index
+        for (int j = i; j < n; j++) {
+            // Add all the elements of subarray = a[i...j]:
+            int s = 0;
+            for (int K = i; K <= j; K++) {
+                s += a[k];
+            }
+
+            if (s == k) {
+                len = max(len, j - i + 1);
+            }
+        }
+
+        return len;
+    }
+}
+
+int main() {
+    vector<int> a = {-1,1,1};
+
+    int k = 1;
+    int len = getLongestSubarray(a, k);
+    cout << "The length of the longest subarray is: " << len << "\n";
+
+    return 0;
+}
+
+
+
+// Solution 2: Better Approach (Using two loops): 
+#include <bits/stdc++.h>
+using namespace std;
+
+int getLongestSubarray(vector<int> &a, int k) {
+    int n = a.size(); // size of the array
+
+    int len = 0;
+
+    // Starting Index
+    for (int i = 0; i < n; i++) {
+        int s = 0;
+        // Ending Index
+        for (int j = i; j < n; j++) {
+            // Add the elements to the subarray = a[i...j-1]:
+            s += a[j];
+
+            if (s == k) {
+                len = max(len, j - i + 1);
+            }
+        }
+    }
+
+    return len;
+}
+
+int main() {
+    vector<int> a = {-1,1,1};
+
+    int k = 1;
+    int len = getLongestSubarray(a, k);
+    cout << "The length of the longest subarray is: " << len << "\n";
+
+    return 0;
+}
+
+
+
+// Solution 3: Optimal Approach (Using Hashing): 
+#include <bits/stdc++.h>
+using namespace std;
+
+int getLongestSubarray(vector<int> &a, int k) {
+    int n = a.size(); // size of the array
+
+    map<int, int> preSumMap;
+    int sum = 0;
+    int maxLen = 0;
+
+    for (int i = 0; i < n; i++) {
+        // Calculate the prefix sum till index i:
+        sum += a[i];
+
+        // If the sum = k, update the maxLen:
+        if (sum == k) {
+            maxLen = max(maxLen, i + 1);
+        }
+
+        // Calculate the sum of remaining part i.e. x-k:
+        int rem = sum - k;
+
+        // Calculate the length and update maxLen:
+        if (preSumMap.find(rem) != preSumMap.end()) {
+            int len = i - preSumMap[rem];
+            maxLen = max(maxLen, len);
+        }
+
+        // Finally, update the map checking the conditions:
+        if (preSumMap.find(sum) == preSumMap.end()) {
+            preSumMap[sum] = i;
+        }
+    }
+
+    return maxLen;
+}
+
+int main() {
+    vector<int> a = {-1,1,1};
+
+    int k = 1;
+    int len = getLongestSubarray(a, k);
+    cout << "The length of the longest subarray is: " << len << "\n";
+
+    return 0;
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
