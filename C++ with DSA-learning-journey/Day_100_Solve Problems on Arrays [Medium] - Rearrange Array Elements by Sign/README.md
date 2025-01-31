@@ -140,7 +140,7 @@ int main() {
 
 ## 🛠️ Check out my code on GitHub  
 You can find the complete code for **Day 100** here:  
-🔗 [GitHub - Day100 Rearrange Array Elements by Sign](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/tree/main/C%2B%2B%20with%20DSA-learning-journey/Day_100_Solve%20Problems%20on%20Arrays%20%5BMedium%5D%20-%20Rearrange%20Array%20Elements%20by%20Sign)  
+🔗 [GitHub - Day100 Rearrange Array Elements by Sign](https://github.com/Itssanthoshhere/Data-Structures-and-Algorithms/blob/main/C%2B%2B%20with%20DSA-learning-journey/Day_100_Solve%20Problems%20on%20Arrays%20%5BMedium%5D%20-%20Rearrange%20Array%20Elements%20by%20Sign/Rearrange_Array_Elements_by_Sign.cpp)  
 
 ---
 
